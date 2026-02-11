@@ -57,10 +57,10 @@ Developed an OLS regression model across 169 countries to analyze how environmen
 
 ## Resume
 
-[Download my resume (PDF)](assets/SophiaHughes_Resume.pdf)
+[Download my resume (PDF)](assets/Sophia-Hughes-Resume.pdf)
 
 <iframe
-  src="assets/SophiaHughes_Resume.pdf"
+  src="assets/Sophia-Hughes-Resume.pdf"
   width="100%"
   height="900px"
   style="border: 1px solid #30363d; border-radius: 8px;"
