@@ -1,3 +1,7 @@
+---
+layout: home
+---
+
 # Sophia Hughes  
 **Data Science & Economics @ Northeastern University**
 
