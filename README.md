@@ -1,6 +1,9 @@
 # Sophia Hughes - Portfolio
 This site highlights my work and projects in data science, economics, and analytics-driven research.
 
+**View my portfolio site:**  
+https://sophiahughes1105.github.io/
+
 ## About me
 I am a student of Data Science and Economics at Northeastern University, with a strong interest in sports analytics, predictive modeling, and data analytics. My work focuses on utilizing data-driven methods to analyze real-world systems, identify patterns, and inform decision-making.
 
