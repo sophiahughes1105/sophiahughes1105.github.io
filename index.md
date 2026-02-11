@@ -17,9 +17,9 @@ Developed an OLS regression model across 169 countries to analyze how environmen
 Tools: Stata
 
 ## Skills
-**Programming Languages & Tools:**  Python, R, Git, SQL
-**Libraries:** Pandas, NumPy, Scikit-learn, Matplotlib, JSON
-**Methods:** Predictive Modeling, Feature Engineering, Data Cleaning, Statistical Analysis
+**Programming Languages & Tools:**  Python, R, Git, SQL  
+**Libraries:** Pandas, NumPy, Scikit-learn, Matplotlib, JSON  
+**Methods:** Predictive Modeling, Feature Engineering, Data Cleaning, Statistical Analysis  
 
 ## About Me
 I am a Data Science and Economics student at Northeastern University and currently pursuing my Master's degree in Economics with a concentration in Data Science. With strong interests in sports analytics, economics, data analytics, and sustainability, I enjoy using data to understand real-world problems, identify patterns, build models, and communicate insights clearly.
