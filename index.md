@@ -30,7 +30,7 @@ I am a Data Science and Economics student at Northeastern University currently p
 ## Skills
 
 **Programming Languages & Tools:** Python, R, Git, SQL  
-**Libraries:** pandas, NumPy, scikit-learn, matplotlib, JSON  
+**Libraries:** pandas, NumPy, scikit-learn, matplotlib  
 **Methods:** predictive modeling, feature engineering, data cleaning, statistical analysis  
 
 ---
@@ -41,9 +41,13 @@ I am a Data Science and Economics student at Northeastern University currently p
 Built classification models in Python using scikit-learn to predict which NCAA Division I women’s hockey players are most likely to advance to professional leagues and applied the results to analyze the Northeastern Women’s Hockey roster.  
 **Tools:** Python (pandas, NumPy, matplotlib, scikit-learn, seaborn)
 
+---
+
 ### 🏀 NBA Data Analysis: Growth of the Three-Point Shot
 Analyzed NBA game-level data (1979–2025) to examine long-term trends in three-point shooting and its relationship to team success. Created multi-decade visualizations and statistical comparisons of championship teams versus league averages.  
 **Tools:** Python (pandas, matplotlib)
+
+---
 
 ### 🌍 The Gini Coefficient and the Environment
 Developed an OLS regression model across 169 countries to analyze how environmental and political factors relate to income inequality. Identified GDP (PPP) and renewable energy share as statistically significant predictors of the Gini coefficient.  
@@ -52,12 +56,20 @@ Developed an OLS regression model across 169 countries to analyze how environmen
 ---
 
 ## Resume
-[My resume](assets/Sophia-Hughes-Resume.pdf)
+
+[Download my resume (PDF)](assets/SophiaHughes_Resume.pdf)
+
+<iframe
+  src="assets/SophiaHughes_Resume.pdf"
+  width="100%"
+  height="900px"
+  style="border: 1px solid #30363d; border-radius: 8px;"
+></iframe>
 
 ---
 
 ## Contact Me
 
-**LinkedIn:** https://www.linkedin.com/in/sophiahughes1105/  
+**LinkedIn:** https://www.linkedin.com/in/sophiahughes1105  
 **GitHub:** https://github.com/sophiahughes1105  
 **Email:** hughes.so@northeastern.edu
