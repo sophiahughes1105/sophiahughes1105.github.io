@@ -64,6 +64,17 @@
       border-radius: 6px;
     }
 
+    .about-container {
+      max-width: 700px;
+    }
+
+    .about-photo {
+      width: 220px;
+      border-radius: 10px;
+      display: block;
+      margin-bottom: 20px;
+    }
+
   </style>
 </head>
 
@@ -96,10 +107,15 @@
 
 <section id="about">
   <h2>About Me</h2>
-  <img src="assets/AboutMe.jpeg" width="180" style="border-radius:8px; float:right; margin-left:20px;">
-  <p>I am an undergraduate student studying Data Science and Economics at Northeastern University, while also currently pursuing a Master’s degree in Economics 
-    with a concentration in Data Science. With strong interests in sports analytics, economics, data analytics, and sustainability, I enjoy using data to understand 
-    real-world problems, identify patterns, build models, and communicate insights clearly.</p
+  <div class="about-container">
+    <img src="assets/AboutMe.jpg" class="about-photo">
+    <p>
+      I am an undergraduate student studying Data Science and Economics at Northeastern University, 
+      while also currently pursuing a Master’s degree in Economics with a concentration in Data Science. 
+      With strong interests in sports analytics, economics, data analytics, and sustainability, I enjoy 
+      using data to understand real-world problems, identify patterns, build models, and communicate insights clearly.
+    </p>
+  </div>
 </section>
 
 <section id="skills">
