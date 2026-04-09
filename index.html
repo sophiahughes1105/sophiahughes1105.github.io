@@ -37,9 +37,9 @@
     }
 
     .content {
-      margin-left: 240px;
-      padding: 40px;
-      max-width: 900px;
+      margin-left: 260px;
+      padding: 40px 60px;
+      max-width: 860px;
     }
 
     section {
@@ -47,6 +47,8 @@
     }
 
     h1 { color: white; }
+    h2 { color: white; border-bottom: 1px solid #30363d; padding-bottom: 8px; }
+    h3 { color: #58a6ff; }
     a { color: #58a6ff; }
 
     iframe {
@@ -64,19 +66,31 @@
       border-radius: 6px;
     }
 
-  .about-container {
-    max-width: 700px;
-  }
-  
+    .about-container {
+      max-width: 700px;
+    }
 
+    .project-block {
+      margin-bottom: 60px;
+    }
 
+    img {
+      max-width: 100%;
+      border-radius: 6px;
+    }
+
+    .caption {
+      font-size: 14px;
+      color: #9fb3c8;
+      margin-top: 6px;
+      margin-bottom: 16px;
+    }
   </style>
 </head>
 
 <body>
 
 <div class="sidebar">
-
   <div style="text-align:center; margin-bottom:30px;">
     <img src="assets/ProfessionalHeadshot.jpeg" width="120" style="border-radius:50%; border:3px solid #58a6ff;">
     <p style="color:white; margin-top:10px;"><b>Sophia Hughes</b></p>
@@ -96,139 +110,84 @@
 <section id="home">
   <h1>Sophia Hughes</h1>
   <p><b>Data Science & Economics @ Northeastern University</b></p>
-  <p>Welcome to my project portfolio! This site highlights selected projects in data science, including predictive modeling and machine learning methods, 
-    as well as work in economics and applied analytics.</p>
+  <p>Welcome to my project portfolio! This site highlights selected projects in data science, including predictive modeling and machine learning methods, as well as work in economics and applied analytics.</p>
 </section>
 
 <section id="about">
   <h2>About Me</h2>
-
   <div class="about-container">
-    <p>
-      I am an undergraduate Data Science and Economics student at Northeastern University, while currently pursuing a Master’s degree in Economics with a concentration in Data Science. 
-      I am interested in applying statistical modeling and machine learning to analyze real-world problems and generate actionable insights.
-    </p> 
-    <p>
-      My work spans predictive modeling, data visualization, and statistical analysis using tools such as Python, R, SQL, and scikit-learn. I am particularly interested in 
-      sports analytics, performance analytics, and applied economic analysis, and I enjoy using data to identify patterns, evaluate performance, and communicate results clearly.
-    </p>
-    <p></p>
-      I am currently seeking opportunities to apply my analytical and technical skills in data science and analytics roles where data can support informed decision-making and strategy.
-    </p>
+    <p>I am an undergraduate Data Science and Economics student at Northeastern University, while currently pursuing a Master's degree in Economics with a concentration in Data Science. I am interested in applying statistical modeling and machine learning to analyze real-world problems and generate actionable insights.</p>
+    <p>My work spans predictive modeling, data visualization, and statistical analysis using tools such as Python, R, SQL, and scikit-learn. I am particularly interested in sports analytics, performance analytics, and applied economic analysis, and I enjoy using data to identify patterns, evaluate performance, and communicate results clearly.</p>
+    <p>I am currently seeking opportunities to apply my analytical and technical skills in data science and analytics roles where data can support informed decision-making and strategy.</p>
   </div>
 </section>
-
-
 
 <section id="skills">
   <h2>Skills</h2>
   <p><b>Languages:</b> Python, R, SQL, Git</p>
-  <p><b>Libraries:</b> Pandas, NumPy, Scikit-learn, Matplotlib</p>
-  <p><b>Methods:</b> Predictive modeling, Feature Engineering, Statistical Analysis</p>
+  <p><b>Libraries:</b> Pandas, NumPy, Scikit-learn, Matplotlib, Plotly, Streamlit</p>
+  <p><b>Methods:</b> Predictive Modeling, Feature Engineering, Statistical Analysis, Data Visualization</p>
 </section>
 
 <section id="projects">
   <h2>Projects</h2>
 
-  <h3>🏒 Who Will Go Pro? College Hockey Predictive Modeling</h3>
-  <p>
-  This project applies machine learning methods to develop a predictive analytics model that identifies NCAA Division I women’s hockey players most likely to advance to the
-    professional level. Using collegiate player statistics and team performance data, the model analyzes patterns associated with post-collegiate advancement and evaluates 
-    classification performance across both skaters and goalies. By examining historical player outcomes and performance metrics, the analysis highlights which variables are 
-    most associated with progression to professional leagues and how predictive modeling can be used to evaluate player development pathways.
-  </p>
-  <p>
-  Northeastern University’s program serves as a strong case study due to its consistent national competitiveness and history of producing professional-level players. 
-    Through feature engineering, model training, and performance evaluation, this project demonstrates how data-driven modeling can support scouting insights, performance evaluation,
-    and long-term player development analysis. More broadly, the project illustrates how machine learning techniques can be applied within sports analytics to identify trends in 
-    athlete progression and translate performance data into actionable insights for teams, analysts, and decision-makers.
-  </p>
-  <img src="assets/projects/features_hockey.png" width="650">
+  <div class="project-block">
+    <h3>⚾ MLB Statcast Interactive Dashboard</h3>
+    <p>
+      An interactive, multi-layer Streamlit dashboard built to explore two years (2024–2025) of MLB batted ball and event outcome data from Statcast. The dashboard features a cascading filter system allowing users to drill down by batting team, pitching team, pitcher, pitch type, and event outcome, with each selection dynamically narrowing downstream options.
+    </p>
+    <p>
+      The application renders four interactive Plotly visualizations: a spray chart colored by exit velocity showing where balls were hit on the field, an exit velocity distribution for evaluating contact quality, a launch angle versus hit distance scatter plot for batted ball profile analysis, and a Sankey diagram mapping pitch types to their resulting outcomes. The back end is structured as a modular API layer handling all data loading, cleaning, filtering, and aggregation, with Streamlit caching implemented to ensure responsive performance across a dataset of hundreds of thousands of rows.
+    </p>
+    <a class="button" href="https://github.com/sophiahughes1105/mlb-statcast-dash" target="_blank">View Project</a>
+  </div>
 
-  <p style="font-size:14px; color:#9fb3c8;">
-  Feature comparison between predicted professional players and non-professional players.
-  </p>
+  <div class="project-block">
+    <h3>🏒 Who Will Go Pro? College Hockey Predictive Modeling</h3>
+    <p>
+      This project applies machine learning methods to develop a predictive analytics model that identifies NCAA Division I women's hockey players most likely to advance to the professional level. Using collegiate player statistics and team performance data, the model analyzes patterns associated with post-collegiate advancement and evaluates classification performance across both skaters and goalies. By examining historical player outcomes and performance metrics, the analysis highlights which variables are most associated with progression to professional leagues and how predictive modeling can be used to evaluate player development pathways.
+    </p>
+    <p>
+      Northeastern University's program serves as a strong case study due to its consistent national competitiveness and history of producing professional-level players. Through feature engineering, model training, and performance evaluation, this project demonstrates how data-driven modeling can support scouting insights, performance evaluation, and long-term player development analysis.
+    </p>
+    <img src="assets/projects/features_hockey.png" width="650">
+    <p class="caption">Feature comparison between predicted professional players and non-professional players.</p>
+    <img src="assets/projects/skater_confusion.png" width="500">
+    <p class="caption">Confusion matrix showing classification performance for the skater model.</p>
+    <a class="button" href="https://github.com/sophiahughes1105/hockey-predictive-modeling" target="_blank">View Project</a>
+  </div>
 
-  <br>
+  <div class="project-block">
+    <h3>🏀 NBA Data Analysis: Growth of the Three-Point Shot</h3>
+    <p>
+      Over the last few decades, the NBA has changed in a significant way: teams are shooting more three-pointers than ever before, and this completely reshaped how the game is played. What started as a relatively minor part of the game has now become a central strategy, with many teams building their offense around it. Teams now rely on the three-point shot, but it is still not clear whether this shift has led to better results. Are teams that take more threes consistently more successful? Do they win more games or make the playoffs more often? The goal of this analysis is to answer how the rise of the three-point shot has impacted scoring, team success, and the overall strategy of the game.
+    </p>
+    <img src="assets/projects/3pt_difference.png" width="650">
+    <p class="caption">Difference in three-point makes between NBA Finals champions and runner-ups by year. Green indicates the champion made more threes, red indicates the runner-up did.</p>
+    <img src="assets/projects/3pt_proportion.png" width="650">
+    <p class="caption">Proportion of total field goals coming from three-pointers across NBA history, showing the league-wide shift toward perimeter shooting.</p>
+    <a class="button" href="https://github.com/sophiahughes1105/nba-3pt-analysis" target="_blank">View Project</a>
+  </div>
 
-  <img src="assets/projects/skater_confusion.png" width="500">
+  <div class="project-block">
+    <h3>🌍 The Gini Coefficient and the Environment</h3>
+    <p>
+      Income inequality is a global issue that has significant economic, social, and political effects. Additionally, harmful environmental actions and practices are seen to destroy natural resources, disrupt ecosystems, and disproportionately harm vulnerable and disadvantaged populations that do not have the technology or infrastructure to adapt to climate change and global warming.
+    </p>
+    <p>
+      The goal of this project is to construct a model that predicts a country's Gini coefficient based on various environmental variables through a cross-sectional analysis of data. An ordinary least squares (OLS) regression in STATA was utilized to explore the relationship between the Gini coefficient and the various independent variables.
+    </p>
+    <img src="assets/projects/gini_model.png" width="650">
+    <p class="caption">OLS regression results from cross-country dataset.</p>
+    <a class="button" href="https://github.com/sophiahughes1105/gini-coeffient-and-environment" target="_blank">View Project</a>
+  </div>
 
-  <p style="font-size:14px; color:#9fb3c8;">
-  Confusion matrix showing classification performance for the skater model.
-  </p>
-  <a class="button" href="https://github.com/sophiahughes1105/hockey-predictive-modeling" target="_blank">
-      View Project
-    </a>
-
-
-  <h3>🏀 NBA Data Analysis: Growth of the Three-Point Shot</h3>
-  <p>
-    Over the last few decades, the NBA has changed in a significant way: teams are shooting
-    more three-pointers than ever before, and this completely reshaped how the game is played.
-    What started as a relatively minor part of the game has now become a central strategy, with
-    many teams building their offense around it. Teams now rely on the three-point shot, but it is still
-    not clear whether this shift has led to better results. Are teams that take more threes consistently
-    more successful? Do they win more games or make the playoffs more often? Looking at teams
-    from different eras, it can be seen not just how much more players shoot from deep now, but
-    how much more important that shot has become. The goal of this analysis is to answer how the rise
-    of the three-point shot has impacted scoring, team success, and the overall strategy of the game.
-  </p>
-
-  <img src="assets/projects/3pt_difference.png" width="650">
-  <p style="font-size:14px; color:#9fb3c8;">
-  Difference in three-point makes between NBA Finals champions and runner-ups by year.
-  Green indicates the champion made more threes, red indicates the runner-up did.
-  </p>
-  <br>
-
-  <img src="assets/projects/3pt_proportion.png" width="650">
-  <p style="font-size:14px; color:#9fb3c8;">
-  Proportion of total field goals coming from three-pointers across NBA history, showing the league-wide 
-  shift toward perimeter shooting.
-  </p>
-  <br>
-  <a class="button" href="https://github.com/sophiahughes1105/nba-3pt-analysis" target="_blank">
-      View Project
-    </a>
-
-  <h3>🌍 The Gini Coefficient and the Environment</h3>
-  <p>
-    Income inequality is a global issue that has significant economic, social, and political
-    effects. Additionally, harmful environmental actions and practices are seen to destroy natural
-    resources, disrupt ecosystems, and disproportionately harm vulnerable and disadvantaged
-    populations that do not have the technology or infrastructure to adapt to climate change and
-    global warming.
-  </p>
-  <p>
-    The goal of this project is to construct a model that predicts a country’s Gini coefficient
-    based on various environmental variables through a cross-sectional analysis of data. An ordinary 
-    least squares (OLS) regression in STATA was utilized to explore the relationship between the Gini
-    coefficient and the various independent variables. While the Gini coefficient could be used as an
-    independent variable to explain a country’s environmental practices, this model treats it as the
-    dependent variable, as the focus is on understanding how environmental factors contribute to
-    income inequality. Poor environmental practices and income inequality can be thought of as a
-    positive feedback loop: while economic disparities may influence environmental policies and
-    environmental degradation, the consequences disproportionately affect lower-income
-    populations and thus further widen inequality.
-  </p>
-  
-  <img src="assets/projects/gini_model.png" width="650">
-  <p style="font-size:14px; color:#9fb3c8;">
-  OLS regression results from cross-country dataset.
-  </p>
-  
-  <a class="button" href="https://github.com/sophiahughes1105/gini-coeffient-and-environment" target="_blank">
-      View Project
-    </a>
 </section>
 
 <section id="resume">
   <h2>Resume</h2>
-
-  <p><a href="assets/Sophia-Hughes-Resume.pdf" target="_blank">
-  Open my resume in a new tab
-  </a></p>
-
+  <p><a href="assets/Sophia-Hughes-Resume.pdf" target="_blank">Open my resume in a new tab</a></p>
   <iframe src="assets/Sophia-Hughes-Resume.pdf" width="100%" height="800"></iframe>
 </section>
 
@@ -236,10 +195,7 @@
   <h2>Contact Me!</h2>
   <p>LinkedIn: <a href="https://linkedin.com/in/sophiahughes1105" target="_blank">linkedin.com/in/sophiahughes1105</a></p>
   <p>Email: hughes.so@northeastern.edu</p>
-  <p>GitHub: <a href="https://github.com/sophiahughes1105" target="_blank">
-github.com/sophiahughes1105
-</a></p>
-
+  <p>GitHub: <a href="https://github.com/sophiahughes1105" target="_blank">github.com/sophiahughes1105</a></p>
 </section>
 
 </div>
